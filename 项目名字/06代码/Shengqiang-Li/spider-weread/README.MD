@@ -35,7 +35,7 @@ cd 目录名
 # 安装依赖库
 pip install -r requirement.txt
 # 开始运行
-python pyqt_gui.
+python pyqt_gui.py
 
 python top20.py
 ```
