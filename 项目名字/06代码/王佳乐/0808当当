@@ -1,0 +1,148 @@
+'''
+coding utf-8
+程序完成抓取当当网图书类前600个搜索结果的书籍名称、作者、简介、价格
+'''
+import requests
+from bs4 import BeautifulSoup
+import xlwt
+import numpy
+import random
+import logging
+import os
+
+def init_logger(log_file=None):
+    '''
+    日志打印函数
+    :param log_file: 日志文件输出地址
+    :return:初始化后的日志器
+    '''
+    log_format = logging.Formatter("[%(asctime)s %(levelname)s] %(message)s")
+    logger = logging.getLogger()
+    logger.setLevel(logging.INFO)
+
+    console_handler = logging.StreamHandler()
+    console_handler.setFormatter(log_format)
+    logger.handlers = [console_handler]
+
+    if log_file and log_file != '':
+        file_handler = logging.FileHandler(log_file)
+        file_handler.setFormatter(log_format)
+        logger.addHandler(file_handler)
+
+    return logger
+logger=init_logger(log_file=os.path.join('E:\pythonproject','日志.log'))
+def request_douban(url):
+    '''
+    访问网址
+    :param url: 网址链接
+    :return:
+    '''
+    headers =[ {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0'},
+               {'User-Agent': 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Safari/534.50'},
+               {'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-us) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Safari/534.50'},
+               {'User-Agent': 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0;'},
+               {'User-Agent': 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0)'},
+               {'User-Agent': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)'},
+               {'User-Agent': 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)'},
+               {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv,2.0.1) Gecko/20100101 Firefox/4.0.1'},
+               {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; rv,2.0.1) Gecko/20100101 Firefox/4.0.1'},
+               {'User-Agent': 'Opera/9.80 (Macintosh; Intel Mac OS X 10.6.8; U; en) Presto/2.8.131 Version/11.11'},
+               {'User-Agent': 'Opera/9.80 (Windows NT 6.1; U; en) Presto/2.8.131 Version/11.11'},
+               {'User-Agent': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; TencentTraveler 4.0)'},
+               {'User-Agent': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'}]
+
+    try:
+        response = requests.get(url,headers=headers[int(numpy.floor(len(headers)*random.random()))])
+        if response.status_code == 200:
+            return response.text
+    except requests.RequestException:
+        return None
+
+
+book = xlwt.Workbook(encoding='utf-8', style_compression=0)
+
+sheet = book.add_sheet('当当图书搜索', cell_overwrite_ok=True)
+sheet.write(0, 0, '下标')
+sheet.write(0, 1, '名称')
+sheet.write(0, 2, '作者')
+sheet.write(0, 3, '介绍')
+sheet.write(0, 4, '价格')
+
+n = 1
+
+
+def save_to_excel(soup):
+    '''
+    将提取到的感兴趣的信息保存到excel
+    :param soup: 拉取到的网页信息
+    :return:
+    '''
+    lists = soup.find('ul',class_='bigimg').find_all('li')
+
+    for item in lists:
+        try:
+            item_index = item.get('ddt-pit')
+        except:
+            item_index = '无'
+        # print(item_index)
+        try:
+            item_name = item.find('p',class_='name').find('a').get('title')
+        except:
+            item_name = '无'
+        # print(item_name)
+        try:
+            item_intro = item.find('p', class_='detail').text
+        except:
+            item_name = '无'
+        # print(item_intro)
+        try:
+            item_price = item.find('p',class_='price').find('span', class_='search_now_price').text
+        except:
+            item_price = '无'
+        # print(item_price)
+        try:
+            item_author = item.find('p', class_='search_book_author').find('span').find('a').get('title')
+        except:
+            item_author = '无'
+        # print(item_author)
+
+
+        logger.info('|爬取书籍：%s'%(item_index))
+        logger.info(' |书籍名称：%s'%(item_name))
+        logger.info(' |书籍作者：%s'%(item_author))
+        logger.info(' | 书籍介绍：%s'%(item_intro))
+        logger.info(' |书籍价格：%s'%(item_price))
+        # print('|书籍名称：' + item_name + ' |书籍作者' + item_author + ' |书籍简介' + item_intro)
+
+        global n
+
+        sheet.write(n, 0, item_index)
+        sheet.write(n, 1, item_name)
+        sheet.write(n, 2, item_author)
+        sheet.write(n, 3, item_intro)
+        sheet.write(n, 4, item_price)
+
+        n = n + 1
+
+
+def main(page,url):
+    '''
+    函数完成网页内容抓取、解析、并保存到excel文件中
+    :param page: 抓取第page页数据
+    :param url: 抓取的网页地址信息
+    :return: 无
+    '''
+    # url = 'https://read.douban.com/category?page='+str(page)+'&kind=100'
+    url='http://search.dangdang.com/?key='+url+'&act=input&page_index='+str(page)   #将传入的网址信息合成网址
+    html = request_douban(url)  #抓取网页数据
+    soup = BeautifulSoup(html, 'html.parser')  #通过bs4解析网页数据
+    save_to_excel(soup)  #从网页数据中提取所需数据，并保存到excel
+
+
+
+if __name__ == '__main__':
+    url = input('请输入网址：')#输入搜索界面网址，示例：%BB%AF%D1%A7
+    for i in range(1,11):   #range表示抓取搜索结果的页数
+        main(i, str(url))   #运行主函数
+
+book.save(u'当当网搜索结果.xls')
