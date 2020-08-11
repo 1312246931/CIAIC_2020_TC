@@ -13,8 +13,8 @@
 Code
 ├─ excel_func.py                   读写excel文件
 ├─ pyqt_gui.py                     PyQt GUI界面
-└─ wereader.py                     微信读书相关api
-└─ top20.py                        获得微信读书榜单Top20的书籍信息
+├─wereader.py                     微信读书相关api
+├─ top20.py                        获得微信读书榜单Top20的书籍信息
 └─ utils.py                        日志函数
 
 ```
@@ -37,7 +37,8 @@ pip uninstall -y -r requirement.txt
 # 再重新安装依赖库
 pip install -r requirement.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 # 开始运行
-python pyqt_gui.
-
+# 获取个人书架上的书籍信息和读数笔记
+python pyqt_gui.py
+# 获取微信读数榜单上的书籍信息
 python top20.py
 ```
