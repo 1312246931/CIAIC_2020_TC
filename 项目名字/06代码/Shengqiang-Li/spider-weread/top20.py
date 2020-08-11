@@ -47,10 +47,10 @@ def getData(url):
     """
     datalist = []
     html = requestURL(url)  # 保存网页源码
-    logger.info('Get the source code of the url...')
+    logger.info('获取网页源码...')
     soup = BeautifulSoup(html, "html.parser")
     booklist = soup.find('ul',class_="ranking_content_bookList").select('li')
-    logger.info('Get the booklist in this page...')
+    logger.info('获得书籍列表...')
     for item in booklist:
         data = []
         bookid = item.get('bookid')
@@ -94,14 +94,14 @@ def saveData(datalist,savepath):
     :param savepath: 保存数据的excel表格的路径
     :return:
     """
-    logger.info("Saving...")
+    logger.info("开始保存书籍信息...")
     workbook = xlwt.Workbook(encoding="utf-8")           #创建workbook
     worksheet = workbook.add_sheet('微信读数总榜Top20',cell_overwrite_ok=True)
     col = ('bookid','书名',"作者名","简介","评分","今日阅读人数")
     for i in range(0,6):
         worksheet.write(0,i,col[i])
     for i in range(0,20):
-        logger.info('Saving the %d....'%i)
+        logger.info('正在保存第%d本....'%i)
         data = datalist[i]
         for j in range(0,6):
             worksheet.write(i+1,j,data[j])
