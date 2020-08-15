@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>查询界面</title>
+    {% load static %}
+    <!-- javascript代码 -->
+    <script type="text/javascript" src="{% static 'app001/js/jssearch.js' %}"></script>
+    <!-- css代码-->
+    <link href="{% static 'app001/css/csssearch.css' %}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+{#搜索框#}
+<div id="container">
+    <form class="search bar7" >
+        <div id="search1">
+            <input type="text" placeholder="请输入城市名称" id="myinput" onchange="method_search()" required name="key01">
+            <button id="myBtn" class="bar7 button" onclick="get_input()" ></button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
+
+{#<body onload="startTime()">#}
+<!--警告框-->
+{#<button class="button1" onclick="method_alert()">警告</button>#}
+{#<!--确认框-->#}
+{#<button class="button1" onclick="method_verify()">确认</button>#}
+{#<p id="demo1"></p>#}
+{#<!--提示框-->#}
+{#<button class="button1" onclick="method_tips()">提示</button>#}
+{#<p id="demo2"></p>#}
+{#<!--显示日期-->#}
+{#<button class="button1" onclick="method_displayDate()">显示日期</button>#}
+{#<p id="demo3"></p>#}
+<!--计数-->
+{#<form>#}
+{#<input type="button" value="开始计数!" onclick="doTimer()" />#}
+{#<input type="text" id="txt" />#}
+{#<input type="button" value="停止计数!" onclick="stopCount()" />#}
+{#</form>#}
+{#<p>#}
+{#单击开始计数按钮，按下时开始计数，输入框将从0开始一直计数。单击停止计数按钮，按下时停止计数，再次点击开始计数按钮，又再次开始计数。#}
+{#</p>#}
+
+{#<div id="txt"></div>#}
+
+{#网页跳转#}
+{#<button class="button1" onclick="method_search()">Jump</button>#}
+
+{#渐变色#}
+{#<h3>线性渐变 - 从左到右</h3>#}
+{#<p>从左边开始的线性渐变。起点是红色，慢慢过渡到黄色：</p>#}
+{#<div id="grad1"></div>#}
+
+{#加入图片#}
+{#<a href="{% static 'app001/img/jerry.jpeg' %}">#}
+{#  <img src="{% static 'app001/img/jerry.jpeg' %}" alt="Jerry">#}
+{#</a>#}
+
+{#设置背景图片#}
+{#<div class="container">#}
+{#<div class="center_div">#}
+{#</div>#}
+{#</div>#}

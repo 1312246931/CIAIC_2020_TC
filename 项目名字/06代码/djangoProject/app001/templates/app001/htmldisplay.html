@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>展示页面</title>
+    {% load static %}
+    <!-- javascript代码 -->
+    <script type="text/javascript" src="{% static 'app001/js/jsdisplay.js' %}"></script>
+    <!-- css代码-->
+    <link href="{% static 'app001/css/cssdisplay.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+{#搜索框#}
+{#<div id="container">#}
+{#    <div class="search bar7">#}
+{#        <form>#}
+{#            <input type="text" placeholder="请输入城市名称" required>#}
+{#            <button class="bar7 button" onclick="method_search()" ></button>#}
+{#        </form>#}
+{#    </div>#}
+{#</div>#}
+
+<div class="search bar7">
+    <form>
+        <input type="text" placeholder="请输入城市名称" required>
+        <button class="bar7 button" onclick="method_search()" ></button>
+    </form>
+</div>
+
+{#网页布局#}
+<div class="header">
+  <h1>全国天气查询</h1>
+</div>
+
+<div class="navbar">
+  <a href="http://localhost:8000/app001/display/">首页</a>
+  <a href="https://weread.qq.com/web/category/all">微信读书</a>
+  <a href="https://movie.douban.com/top250">豆瓣电影</a>
+  <a href="http://soso.nipic.com/?q=%E5%BC%BA%E7%9A%87">精美图集</a>
+  <a href="#">搞笑图集</a>
+  <a href="https://music.163.com/discover/artist">网易云</a>
+  <a href="#" class="right">查看更多</a>
+</div>
+
+<div class="row">
+{#    左边的侧栏#}
+  <div class="side">
+      <h2>豆瓣电影TOP250</h2>
+      <h5>电影信息</h5>
+{#      <div class="fakeimg" style="height:200px;">电影信息</div>#}
+      <p>电影介绍</p>
+      <h3>更多内容</h3>
+{#      <h2>豆瓣读书榜单</h2>#}
+{#      <div class="fakeimg" style="height:60px;">书籍信息</div><br>#}
+{#      <div class="fakeimg" style="height:60px;">书籍信息</div><br>#}
+{#      <div class="fakeimg" style="height:60px;">书籍信息</div>#}
+  </div>
+{#    中间的内容#}
+  <div class="main">
+      <h2>{{city_name }}</h2>
+        <ul>
+            {% for oneday in wea_info %}
+                <li>{{ oneday.0}}</li>
+                <li>{{ oneday.1}}</li>
+                <li>{{ oneday.2}}</li>
+                <li>{{ oneday.3}}</li>
+                <li>{{ oneday.4}}</li>
+            {% endfor %}
+        </ul>
+  </div>
+{#    右边侧栏#}
+  <div class="side">
+      <h2>微信读书TOP200</h2>
+{#      <div class="img_threebody"></div>#}
+      <div class="weread" >
+          <img src="https://wfqqreader-1252317822.image.myqcloud.com/cover/233/695233/t6_695233.jpg" alt="书籍封面" width="64" height="96">
+          <p float="right">三体</p>
+      </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>周边城市</h2>
+    <ul>
+        {% for oneday in wea_surround %}
+            <li>{{ oneday.0}}</li>
+            <li>{{ oneday.1}}</li>
+            <li>{{ oneday.2}}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+</body>
+</html>
