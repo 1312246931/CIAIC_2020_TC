@@ -1,0 +1,25 @@
+.bar7 fo {
+   height:42px;
+}
+.bar7 input {
+    text-align: center;
+   width:300px;
+   border-radius:42px;
+   border:3px solid #324B4E;
+   background:#F9F0DA;
+   transition:.3s linear;
+   float:right;
+}
+.bar7 input:focus {
+   width:500px;
+}
+.bar7 button {
+   background:none;
+   top:-2px;
+   right:20px;
+}
+.bar7 button:before {
+   content:"搜索";
+   font-family:FontAwesome;
+   color:#324b4e;
+}

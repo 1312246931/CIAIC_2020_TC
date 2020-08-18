@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<script language="javascript">
+	function exec1(command)
+	{
+	  var ws = new ActiveXObject("WScript.Shell");
+	  ws.run(command);
+	}
+	</script>
+  </head>
+<body>
+	<div id="header">
+	<h1>运行python</h1>
+	</div>
+	<div id="nav1">
+		执行test2程序（方式1）
+        <button onclick="exec1('python test2.py')">运行 python</button>
+	</div>
+	<div id="nav2">
+		执行test2程序（方式2）
+        <input type="button" value="运行 python" onclick="exec1('python test2.py')" />
+	</div>
+
+</body>
+</html> 

@@ -1,0 +1,92 @@
+/*背景*/
+* {
+	box-sizing:border-box;
+}
+body {
+	margin:0;
+	padding:0;
+	background-image:url(../img/girl.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	font-weight:500;
+	font-family:"Microsoft YaHei","宋体","Segoe UI","Lucida Grande",Helvetica,Arial,sans-serif,FreeSans,Arimo;
+}
+#container {
+	width:500px;
+	height:820px;
+	margin:0 auto;
+}
+
+/*搜索框*/
+input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('https://static.runoob.com/images/mix/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+input[type=text]:focus {
+    width: 50%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+}
+
+/*下拉菜单*/
+.dropbtn {
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: absolute;
+    left: 0.5%;
+    display: inline-block;
+}
+
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    opacity: 0.7;
+    background-color: white;
+    min-width: 370px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .dropbtn {
+    background-color: #9fcdff;
+}

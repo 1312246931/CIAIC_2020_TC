@@ -1,0 +1,131 @@
+
+/*背景*/
+* {
+	box-sizing:border-box;
+}
+body {
+	margin:0;
+	padding:0;
+	font-weight:500;
+	font-family:"Microsoft YaHei","宋体","Segoe UI","Lucida Grande",Helvetica,Arial,sans-serif,FreeSans,Arimo;
+}
+
+/*搜索栏样式*/
+input[type=text] {
+    width: 400px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('https://static.runoob.com/images/mix/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    position: absolute;
+    left: 38.5%;
+    top: 22.5%;
+}
+
+input[type=text]:focus {
+    width: 25%;
+    position: absolute;
+    left: 38.5%;
+    top: 22.5%;
+}
+
+/*页面布局*/
+/* 标题 */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: url("../img/girl.jpg") no-repeat;
+    block-size: 100% 100%;
+    color: white;
+}
+
+/* 标题字体加大 */
+.header h1 {
+    font-size: 40px;
+}
+
+/* 导航 */
+.navbar {
+    overflow: hidden;
+    background-color: #333333;
+}
+
+/* 导航栏样式 */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* 右侧链接*/
+.navbar a.right {
+    float: right;
+}
+
+/* 鼠标移动到链接的颜色 */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* 列容器 */
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* 创建两个列 */
+/* 边栏 */
+/*.side_left {*/
+/*    -ms-flex: 25%; !* IE10 *!*/
+/*    flex: 25%;*/
+/*    background-color: white;*/
+/*    padding: 20px;*/
+/*}*/
+
+/* 主要的内容区域 */
+.main {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* 底部 */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+.weread{
+    float: left;
+    background-color: white;
+}
+

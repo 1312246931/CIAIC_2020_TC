@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>查询界面</title>
+    {% load static %}
+    <!-- javascript代码 -->
+    <script type="text/javascript" src="{% static 'app001/js/jssearch.js' %}"></script>
+    <!-- css代码-->
+    <link href="{% static 'app001/css/csssearch.css' %}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="container">
+{#    小组分工#}
+    <div class="dropdown">
+        <button class="dropbtn">组员信息</button>
+        <div class="dropdown-content">
+            <ul>
+
+                <li><a>组长:王佳乐 职位:项目工程师 测试工程师 </a></li>
+
+                <li><a>组员:李盛强 职位:详细设计师 代码工程师</a></li>
+
+                <li><a>组员:朱文博 职位:详细设计师 代码工程师</a></li>
+
+                <li><a>组员:刘书培 职位:概要设计师 代码工程师</a></li>
+
+                <li><a>组员:罗天悦 职位:需求分析师 代码工程师</a></li>
+            </ul>
+        </div>
+    </div>
+    {#搜索框#}
+    <form action="/app001/search" method="get">
+        <input type="text" placeholder="请输入城市名称" name="q" required="required">
+    </form>
+</div>
+</body>
+</html>
+

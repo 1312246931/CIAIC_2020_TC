@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>精美图集页面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <script type="text/javascript" src="{% static 'app001/js/js01.js' %}">
+    </script>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+    <style>
+        body
+        {
+            background-color:whitesmoke;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333333;
+            height:50%;
+        }
+
+        /* 导航栏样式 */
+        .navbar a {
+            float: left;
+            height:50%;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .box4 {
+        {#background: url("../../static/app001/image/bac_img13.jpg") no-repeat;#}
+        {#background-size: cover;#}
+            background: black;
+            color: black;  /* h2标题字体颜色 */
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color:lightpink;
+            border: none;
+            color: #000000;
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+            width: 140px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button  span:after {
+            content: '»';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button :hover span {
+            padding-right: 25px;
+        }
+        .button :hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        .box4 .header {
+            background: url("../../static/app001/image/title.jpg") no-repeat;
+            padding: 150px;
+            text-align: center;
+            color:white;
+            font-size: 15px;
+        }
+        .box4 .container {
+            clear: both;
+            overflow: hidden;
+            padding: 0 200px 0 150px ;
+            position: relative;
+        {#background: white;#}
+            background: url("../../static/app001/image/bac_img13.jpg") no-repeat;
+            background-size: cover;
+        }
+        .box4 .container .left {
+            width: 200px;
+        {#background:url("../../static/app001/image/bac_img13.jpg") no-repeat ;#}
+            height: auto;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .box4 .container .center {
+            left: auto;
+            background: black;/* container.center中间背景颜色 */
+        {#background: url("../../static/app001/image/bac_img.jpg");#}
+            height: auto;
+            width: 100%;
+        }
+
+        .box4 .container .left ul{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+        }
+
+
+        .box4 .container .left a{
+            display:block;
+            background-color:lightblue;
+            color:white;
+            width:200px;
+            height:25%;
+            text-align:center;
+            padding:20px;
+            text-decoration:none;
+        }
+
+        .box4 .container .left a:hover,a:active{
+            background-color:black;
+        }
+        .dropbtn {
+            background-color: lightskyblue;
+            opacity: 0.7;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .dropdown {
+            position: absolute;
+            left: 0.5%;
+            display: inline-block;
+        }
+
+        /* 下拉内容 (默认隐藏) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 90px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+        }
+
+        /* 下拉菜单的链接 */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* 鼠标移上去后修改下拉菜单链接颜色 */
+        .dropdown-content a:hover {background-color: #f1f1f1}
+
+        /* 在鼠标移上去后显示下拉菜单 */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* 当下拉内容显示后修改下拉按钮的背景颜色 */
+        .dropdown:hover .dropbtn {
+            background-color: #9fcdff;
+        }
+        .container.center{
+
+            background-color: rgba(0,0,0,0.99);
+
+
+        }
+
+    </style>
+</head>
+<body>
+
+
+<div class="box4">
+    <div class="header">
+        <h1>图集展示</h1>
+        <h2>作者：朱文博 刘书培</h2>
+
+    </div>
+    <div class="navbar">
+        <a href="#">首页</a>
+        <a href="http://localhost:8000/app001/wereadtotal/">微信读书</a>
+        <a href="https://movie.douban.com/top250">豆瓣电影</a>
+        <a href="http://soso.nipic.com/?q=%E5%BC%BA%E7%9A%87">精美图集</a>
+        <a href="#">搞笑图集</a>
+        <a href="https://music.163.com/discover/artist">网易云</a>
+    </div>
+    <div class="container" >
+        <div class="left">
+            <div class="dropdown">
+                <button class="dropbtn">图集主题</button>
+                <div class="dropdown-content">
+                    <ul>
+
+                        <li><a onclick="method_jump03()">夜色</a></li>
+
+                        <li><a onclick="method_jump04()">游戏</a></li>
+
+                        <li><a onclick="method_jump01()">'打一架'表情包</a></li>
+
+                        <li><a onclick="method_jump02()">'就你话多'表情包</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="center">
+            <div class="column">
+                <p>
+                    <a target="" href="../../static/app001/image/夜色/image_01_process.jpg">
+                        <img src="../../static/app001/image/夜色/image_01_process.jpg" alt="图片文本描述" width="19.2%" height="24.2%" >
+                    </a>
+                    <a target="" href="../../static/app001/image/夜色/image_02_process.jpg">
+                        <img src="../../static/app001/image/夜色/image_02_process.jpg" alt="图片文本描述" width="19.2%" height="24.2%">
+                    </a>
+                    <a target="" href="../../static/app001/image/夜色/image_03_process.jpg">
+                        <img src="../../static/app001/image/夜色/image_03_process.jpg" alt="图片文本描述" width="19.2%" height="24.2%">
+                    </a>
+                    <a target="" href="../../static/app001/image/夜色/image_05_process.jpg">
+                        <img src="../../static/app001/image/夜色/image_05_process.jpg" alt="图片文本描述" width="19.2%" height="24.2%">
+                    </a>
+                    <a target="" href="../../static/app001/image/夜色/image_06_process.jpg">
+                        <img src="../../static/app001/image/夜色/image_06_process.jpg" alt="图片文本描述" width="19.2%" height="24.2%">
+                    </a>
+                </p>
+            </div>
+            <div class="column">
+                <p>
+                    <a target="" href="../../static/app001/image/image_process2/image_01_process.jpg">
+                        <img src="../../static/app001/image/image_process2/image_01_process.jpg" alt="图片文本描述" width="19.2%" height="24.2%">
+                    </a>
+                    <a target="" href="../../static/app001/image/image_process2/image_02_process.jpg">
+                        <img src="../../static/app001/image/image_process2/image_02_process.jpg" alt="图片文本描述" width="19.2%" height="24.2%">
+                    </a>
+                    <a target="" href="../../static/app001/image/image_process2/image_03_process.jpg">
+                        <img src="../../static/app001/image/image_process2/image_03_process.jpg" alt="图片文本描述" width="19.2%" height="24.2%">
+                    </a>
+                    <a target="" href="../../static/app001/image/image_process2/image_04_process.jpg">
+                        <img src="../../static/app001/image/image_process2/image_04_process.jpg" alt="图片文本描述" width="19.2%" height="24.2%">
+                    </a>
+                    <a target="" href="../../static/app001/image/image_process2/image_05_process.jpg">
+                        <img src="../../static/app001/image/image_process2/image_05_process.jpg" alt="图片文本描述" width="19.2%" height="24.2%">
+                    </a>
+                </p>
+            </div>
+            <div class="column">
+                <p>
+                    <a target="" href="../../static/app001/image/打一架_处理后/17.png">
+                        <img src="../../static/app001/image/打一架_处理后/17.png" alt="图片文本描述" width="19.2%" height="24.2%">
+                    </a>
+                    <a target="" href="../../static/app001/image/打一架_处理后/18.png">
+                        <img src="../../static/app001/image/打一架_处理后/18.png" alt="图片文本描述" width="19.2%" height="24.2%">
+                    </a>
+                    <a target="" href="../../static/app001/image/打一架_处理后/19.png">
+                        <img src="../../static/app001/image/打一架_处理后/19.png" alt="图片文本描述" width="19.2%" height="24.2%">
+                    </a>
+                    <a target="" href="../../static/app001/image/打一架_处理后/20.png">
+                        <img src="../../static/app001/image/打一架_处理后/20.png" alt="图片文本描述" width="19.2%" height="24.2%">
+                    </a>
+                    <a target="" href="../../static/app001/image/打一架_处理后/image_01_process.jpg">
+                        <img src="../../static/app001/image/打一架_处理后/image_01_process.jpg" alt="图片文本描述" width="19.2%" height="24.2%">
+                    </a>
+                </p>
+
+            </div>
+
+            <div class="column">
+                <p>
+                    <a target="" href="../../static/app001/image/就你话多_处理后/1.png">
+                        <img src="../../static/app001/image/就你话多_处理后/1.png" alt="图片文本描述" width="19.2%" height="24.2%">
+                    </a>
+                    <a target="" href="../../static/app001/image/就你话多_处理后/2.png">
+                        <img src="../../static/app001/image/就你话多_处理后/2.png" alt="图片文本描述" width="19.2%" height="24.2%">
+                    </a>
+                    <a target="" href="../../static/app001/image/就你话多_处理后/3.png">
+                        <img src="../../static/app001/image/就你话多_处理后/3.png" alt="图片文本描述" width="19.2%" height="24.2%">
+                    </a>
+                    <a target="" href="../../static/app001/image/就你话多_处理后/4.png">
+                        <img src="../../static/app001/image/就你话多_处理后/4.png" alt="图片文本描述" width="19.2%" height="24.2%">
+                    </a>
+                    <a target="" href="../../static/app001/image/就你话多_处理后/image_01_process.jpg">
+                        <img src="../../static/app001/image/就你话多_处理后/image_01_process.jpg" alt="图片文本描述" width="19.2%" height="24.2%">
+                    </a>
+                </p>
+            </div>
+        </div>
+        {#        <div class="right">#}
+        {#            <div class="dropdown1">#}
+        {#                <button class="dropbtn1">表情包主题</button>#}
+        {#                <div class="dropdown-content1">#}
+        {#                    <ul>#}
+        {##}
+        {#                        <li><a onclick="method_jump03()">夜色</a></li>#}
+        {##}
+        {#                        <li><a onclick="method_jump04()">游戏</a></li>#}
+        {##}
+        {#                        <li><a onclick="method_jump01()">'打一架'表情包</a></li>#}
+        {##}
+        {#                        <li><a onclick="method_jump02()">'就你话多'表情包</a></li>#}
+        {##}
+        {#                    </ul>#}
+        {#                </div>#}
+        {#            </div>#}
+        {#        </div>#}
+    </div>
+</div>
+</body>
+</html>

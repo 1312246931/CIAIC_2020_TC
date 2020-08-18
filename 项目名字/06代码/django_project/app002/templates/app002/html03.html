@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CSS 网页布局 - 菜鸟教程(runoob.com)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <script type="text/javascript" src="{% static 'app001/js/js01.js' %}">
+        {% load static %}
+        <link href="{%static 'app001/css/css_02.css'%}" rel="stylesheet" type="text/css">
+    </script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        /* 头部样式 */
+        .header {
+            background: url("../../static/app001/image/title.jpg");
+            padding: 150px;
+            text-align: center;
+            color:white;
+            font-size: 15px;
+        }
+        body
+        {
+            background-color:whitesmoke;
+        }
+
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color:lightpink;
+            border: none;
+            color: #000000;
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+            width: 140px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '»';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        .left_row {
+            float:top;
+            width:25%;
+            text-align:center;
+        }
+        /* 列后清除浮动 */
+        .left_row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .middle_row {
+            float:top;
+            width: 75%;
+            margin:0 500px;
+            text-align:center;
+        }
+        /* 列后清除浮动 */
+        .middle_row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .right_row {
+            float:bottom;
+            width:100%;
+            text-align:center;
+        }
+        /* 列后清除浮动 */
+        .right_row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* 响应式布局 - 小于 600 px 时改为上下布局 */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>图集展示</h1>
+    <h2>作者：朱文博 刘书培</h2>
+</div>
+
+
+<div class="left_row">
+    <img src="../../static/app001/image/夜色/image_01_process.jpg" alt="图片文本描述"  >
+</div>
+
+<div class="middle_row">
+    <div class="column">
+        <h2>夜色</h2>
+        <p>
+            <a target="_blank" href="../../static/app001/image/夜色/image_01_process.jpg">
+                <img src="../../static/app001/image/夜色/image_01_process.jpg" alt="图片文本描述" width="20%" >
+            </a>
+            <a target="_blank" href="../../static/app001/image/夜色/image_02_process.jpg">
+                <img src="../../static/app001/image/夜色/image_02_process.jpg" alt="图片文本描述" width="20%">
+            </a>
+            <a target="_blank" href="../../static/app001/image/夜色/image_03_process.jpg">
+                <img src="../../static/app001/image/夜色/image_03_process.jpg" alt="图片文本描述" width="20%">
+            </a>
+            <a target="_blank" href="../../static/app001/image/夜色/image_04_process.jpg">
+                <img src="../../static/app001/image/夜色/image_04_process.jpg" alt="图片文本描述" width="20%">
+            </a>
+
+            {#            <button class="bar7" onclick="method_jump03()">更多... </button>#}
+            <button class="button" style="vertical-align:middle" onclick="method_jump03()"><span>更多... </span></button>
+        </p>
+    </div>
+    <div class="column">
+        <h2>游戏</h2>
+        <p>
+            <a target="_blank" href="../../static/app001/image/image_process2/image_01_process.jpg">
+                <img src="../../static/app001/image/image_process2/image_01_process.jpg" alt="图片文本描述" width="20%">
+            </a>
+            <a target="_blank" href="../../static/app001/image/image_process2/image_02_process.jpg">
+                <img src="../../static/app001/image/image_process2/image_02_process.jpg" alt="图片文本描述" width="20%">
+            </a>
+            <a target="_blank" href="../../static/app001/image/image_process2/image_03_process.jpg">
+                <img src="../../static/app001/image/image_process2/image_03_process.jpg" alt="图片文本描述" width="20%">
+            </a>
+            <a target="_blank" href="../../static/app001/image/image_process2/image_04_process.jpg">
+                <img src="../../static/app001/image/image_process2/image_04_process.jpg" alt="图片文本描述" width="20%">
+            </a>
+
+            <button class="button" style="vertical-align:middle" onclick="method_jump03()"><span>更多... </span></button>
+        </p>
+    </div>
+    <div class="column">
+        <h2>“打一架”表情包</h2>
+        <p>
+            <a target="_blank" href="../../static/app001/image/打一架_处理后/17.png">
+                <img src="../../static/app001/image/打一架_处理后/17.png" alt="图片文本描述" width="20%" >
+            </a>
+            <a target="_blank" href="../../static/app001/image/打一架_处理后/18.png">
+                <img src="../../static/app001/image/打一架_处理后/18.png" alt="图片文本描述" width="20%">
+            </a>
+            <a target="_blank" href="../../static/app001/image/打一架_处理后/19.png">
+                <img src="../../static/app001/image/打一架_处理后/19.png" alt="图片文本描述" width="20%">
+            </a>
+            <a target="_blank" href="../../static/app001/image/打一架_处理后/20.png">
+                <img src="../../static/app001/image/打一架_处理后/20.png" alt="图片文本描述" width="20%">
+            </a>
+
+            <button class="button" style="vertical-align:middle" onclick="method_jump03()"><span>更多... </span></button>
+        </p>
+
+    </div>
+
+    <div class="column">
+        <h2>“对不起”表情包</h2>
+        <p>
+            <a target="_blank" href="../../static/app001/image/就你话多_处理后/1.png">
+                <img src="../../static/app001/image/就你话多_处理后/1.png" alt="图片文本描述" width="20%">
+            </a>
+            <a target="_blank" href="../../static/app001/image/就你话多_处理后/2.png">
+                <img src="../../static/app001/image/就你话多_处理后/2.png" alt="图片文本描述" width="20%">
+            </a>
+            <a target="_blank" href="../../static/app001/image/就你话多_处理后/3.png">
+                <img src="../../static/app001/image/就你话多_处理后/3.png" alt="图片文本描述" width="20%">
+            </a>
+            <a target="_blank" href="../../static/app001/image/就你话多_处理后/4.png">
+                <img src="../../static/app001/image/就你话多_处理后/4.png" alt="图片文本描述" width="20%">
+            </a>
+
+            <button class="button" style="vertical-align:middle" onclick="method_jump03()"><span>更多... </span></button>
+        </p>
+    </div>
+</div>
+<div class="right_row">
+    <img src="../../static/app001/image/夜色/image_01_process.jpg" alt="图片文本描述"  >
+</div>
+</body>
+</html>

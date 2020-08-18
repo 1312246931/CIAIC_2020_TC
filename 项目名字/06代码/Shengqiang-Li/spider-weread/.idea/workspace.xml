@@ -1,7 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50ce103f-f103-4758-86f8-8f2086bddb2d" name="Default Changelist" comment="" />
+    <list default="true" id="50ce103f-f103-4758-86f8-8f2086bddb2d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/weread_top20.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../django_project/app001/templates/app001/htmlaa.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../django_project/app001/templates/app001/htmlft.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../django_project/app001/templates/app001/htmltotal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/top20.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/.idea/djangoProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/database_lsq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/static/app001/css/cssdisplay.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/static/app001/css/csssearch.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/static/app001/img/girl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/static/app001/img/mingdynasty.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/static/app001/img/threebody.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/static/app001/js/jsdisplay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/static/app001/js/jssearch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/templates/app001/htmldisplay.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/templates/app001/htmlsearch.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/weather.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/static/pic/jerry.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/static/pic/tom.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/templates/app002/defeat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/templates/app002/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/templates/app002/success.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app003/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app003/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app003/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app003/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app003/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app003/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app003/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app004/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app004/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app004/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app004/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app004/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app004/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app004/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app005/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app005/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app005/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app005/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app005/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app005/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/app005/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/djangoProject/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/djangoProject/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/djangoProject/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/djangoProject/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../djangoProject/manage.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,8 +95,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../day06/python06_01" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -34,7 +105,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Python.top20">
+  <component name="RunManager" selected="Python.weread_top20">
     <configuration name="pyqt_gui" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="spider-weread" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -79,8 +150,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="weread_top20" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="spider-weread" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/weread_top20.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.weread_top20" />
         <item itemvalue="Python.top20" />
         <item itemvalue="Python.pyqt_gui" />
       </list>
@@ -98,6 +192,16 @@
       <option name="presentableId" value="Default" />
       <updated>1596874855790</updated>
       <workItem from="1597129009338" duration="1100000" />
+      <workItem from="1597475457089" duration="3442000" />
+      <workItem from="1597485447450" duration="1393000" />
+      <workItem from="1597488812017" duration="1186000" />
+      <workItem from="1597495635477" duration="19000" />
+      <workItem from="1597495655573" duration="11000" />
+      <workItem from="1597498015836" duration="1953000" />
+      <workItem from="1597578540797" duration="949000" />
+      <workItem from="1597586009987" duration="1700000" />
+      <workItem from="1597646247981" duration="7437000" />
+      <workItem from="1597663434214" duration="2230000" />
     </task>
     <servers />
   </component>
@@ -105,28 +209,49 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="686" y="209" key="FileChooserDialogImpl" timestamp="1597132650062">
+    <state x="686" y="209" key="FileChooserDialogImpl" timestamp="1597649561626">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="686" y="209" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1597132650062" />
-    <state width="1864" height="269" key="GridCell.Tab.0.bottom" timestamp="1597132650901">
+    <state x="686" y="209" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1597649561626" />
+    <state width="1864" height="125" key="GridCell.Tab.0.bottom" timestamp="1597658397356">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1864" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1597132650901" />
-    <state width="1864" height="269" key="GridCell.Tab.0.center" timestamp="1597132650901">
+    <state width="1864" height="125" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1597658397356" />
+    <state width="1864" height="125" key="GridCell.Tab.0.center" timestamp="1597658397356">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1864" height="269" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1597132650901" />
-    <state width="1864" height="269" key="GridCell.Tab.0.left" timestamp="1597132650901">
+    <state width="1864" height="125" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1597658397356" />
+    <state width="1864" height="125" key="GridCell.Tab.0.left" timestamp="1597658397356">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1864" height="269" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1597132650901" />
-    <state width="1864" height="269" key="GridCell.Tab.0.right" timestamp="1597132650901">
+    <state width="1864" height="125" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1597658397356" />
+    <state width="1864" height="125" key="GridCell.Tab.0.right" timestamp="1597658397356">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1864" height="269" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1597132650901" />
+    <state width="1864" height="125" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1597658397356" />
+    <state width="1864" height="319" key="GridCell.Tab.1.bottom" timestamp="1597495103558">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1864" height="319" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1597495103558" />
+    <state width="1864" height="319" key="GridCell.Tab.1.center" timestamp="1597495103558">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1864" height="319" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1597495103558" />
+    <state width="1864" height="319" key="GridCell.Tab.1.left" timestamp="1597495103558">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1864" height="319" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1597495103558" />
+    <state width="1864" height="319" key="GridCell.Tab.1.right" timestamp="1597495103558">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1864" height="319" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1597495103558" />
+    <state x="539" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1597648412852">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="539" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1597648412852" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/spider_weread$top20.coverage" NAME="top20 Coverage Results" MODIFIED="1597129232844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/spider_weread$top20.coverage" NAME="top20 Coverage Results" MODIFIED="1597498033843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/spider_weread$weread_top20.coverage" NAME="weread_top20 Coverage Results" MODIFIED="1597652599316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

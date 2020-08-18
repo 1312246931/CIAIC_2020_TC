@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>展示页面</title>
+    {% load static %}
+    <!-- javascript代码 -->
+    <script type="text/javascript" src="{% static 'app001/js/jsdisplay.js' %}"></script>
+    <!-- css代码-->
+    <link href="{% static 'app001/css/cssdisplay.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+{#搜索框#}
+<form action="/app001/search" method="get">
+    <input type="text" placeholder="请输入城市名称" name="q" required="required">
+</form>
+
+
+{#网页布局#}
+<div class="header">
+  <h1>全国天气查询</h1>
+</div>
+
+<div class="navbar">
+  <a href="http://localhost:8000/app001/display/">返回首页</a>
+  <a href="http://localhost:8000/app001/wereadtotal/">微信读书</a>
+  <a href="http://localhost:8000/app003/index/">豆瓣电影</a>
+  <a href="http://localhost:8000/app002/index/">图集</a>
+  <a href="http://localhost:8000/app004/index/">网易云</a>
+</div>
+
+<div class="row">
+    </div>
+    {#    中间的内容#}
+    <div class="main">
+        <h2>{{city_name }}</h2>
+        <ul>
+            {% for oneday in wea_info %}
+                <li>{{ oneday.0}}</li>
+                <li>{{ oneday.1}}</li>
+                <li>{{ oneday.2}}</li>
+                <li>{{ oneday.3}}</li>
+                <li>{{ oneday.4}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<div class="footer">
+    <h2>周边城市</h2>
+    <ul>
+        {% for oneday in wea_surround %}
+            <li>{{ oneday.0}}</li>
+            <li>{{ oneday.1}}</li>
+            <li>{{ oneday.2}}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+</body>
+</html>
