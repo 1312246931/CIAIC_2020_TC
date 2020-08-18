@@ -2,75 +2,124 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50ce103f-f103-4758-86f8-8f2086bddb2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/weread_top20.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../django_project/app001/templates/app001/htmlaa.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../django_project/app001/templates/app001/htmlft.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../django_project/app001/templates/app001/htmltotal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app001/static/app001/img/benches.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app001/static/app001/img/bridge.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app001/static/app001/img/coast.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app001/static/app001/img/weread1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/bac_img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/bac_img10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/bac_img11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/bac_img12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/bac_img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/bac_img3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/bac_img4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/bac_img5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/bac_img6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/bac_img7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/bac_img8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/bac_img9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/bac_img_14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/image_process.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/image_process2.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/img_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/对不起/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/对不起/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/对不起/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/对不起/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/对不起_处理后/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/对不起_处理后/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/对不起_处理后/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/对不起_处理后/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/就你话多/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/就你话多/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/就你话多/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/就你话多/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/就你话多/img_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/开枪/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/开枪/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/开枪/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/打一架/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/打一架/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/打一架/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/打一架/19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/打一架/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/打一架/img_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/首页展示/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/首页展示/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/首页展示/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/static/app001/image/首页展示/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/templates/app002/html01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/templates/app002/html02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/templates/app002/html03.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/templates/app002/html04.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../django_project/app002/templates/app002/html04.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/templates/app002/test1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/templates/app002/test2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app002/templates/app002/test2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/image_process.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/image_process2.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/image_process2/image_01_process.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/image_process2/image_02_process.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/image_process2/image_03_process.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/image_process2/image_04_process.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/夜色/image_01_process.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/夜色/image_02_process.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/夜色/image_03_process.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/夜色/image_04_process.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/对不起/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/对不起/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/对不起/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/对不起/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/对不起_处理后/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/对不起_处理后/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/对不起_处理后/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/对不起_处理后/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/就你话多/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/就你话多/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/就你话多/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/就你话多/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/就你话多_处理后/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/就你话多_处理后/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/就你话多_处理后/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/就你话多_处理后/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/开枪/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/开枪/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/开枪/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/打一架/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/打一架/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/打一架/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/打一架/19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/打一架/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/打一架_处理后/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/打一架_处理后/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/打一架_处理后/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/打一架_处理后/19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/打一架_处理后/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/首页展示/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/首页展示/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/首页展示/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/首页展示/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/首页展示_处理后/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/首页展示_处理后/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/首页展示_处理后/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/static/app003/image/首页展示_处理后/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app003/templates/app003/html04.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../django_project/app003/templates/app003/html04.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app005/static/app001/css/img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app005/static/app001/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app005/static/app001/css/touxiang1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app005/static/app001/css/touxiang2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app005/static/app001/css/touxiang3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app005/static/app001/css/touxiang4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app005/static/app001/css/touxiang5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app005/static/app001/js/js03.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app005/templates/app001/html01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app005/templates/app001/html02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app005/templates/app001/html03.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app005/templates/app001/html04.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app005/templates/app001/html05.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app005/templates/app001/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app005/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../django_project/app005/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../django_project/app005/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../django_project/app005/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/top20.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/.idea/djangoProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/database_lsq.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/static/app001/css/cssdisplay.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/static/app001/css/csssearch.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/static/app001/img/girl.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/static/app001/img/mingdynasty.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/static/app001/img/threebody.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/static/app001/js/jsdisplay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/static/app001/js/jssearch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/templates/app001/htmldisplay.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/templates/app001/htmlsearch.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app001/weather.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/static/pic/jerry.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/static/pic/tom.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/templates/app002/defeat.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/templates/app002/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/templates/app002/success.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app002/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app003/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app003/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app003/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app003/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app003/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app003/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app003/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app004/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app004/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app004/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app004/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app004/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app004/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app004/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app005/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app005/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app005/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app005/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app005/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app005/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/app005/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/djangoProject/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/djangoProject/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/djangoProject/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/djangoProject/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../djangoProject/manage.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +146,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../django_project" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -202,6 +251,7 @@
       <workItem from="1597586009987" duration="1700000" />
       <workItem from="1597646247981" duration="7437000" />
       <workItem from="1597663434214" duration="2230000" />
+      <workItem from="1597718622072" duration="1206000" />
     </task>
     <servers />
   </component>
@@ -209,10 +259,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="686" y="209" key="FileChooserDialogImpl" timestamp="1597649561626">
+    <state x="686" y="209" key="FileChooserDialogImpl" timestamp="1597721107449">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="686" y="209" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1597649561626" />
+    <state x="686" y="209" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1597721107449" />
     <state width="1864" height="125" key="GridCell.Tab.0.bottom" timestamp="1597658397356">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>

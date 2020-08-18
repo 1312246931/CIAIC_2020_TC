@@ -10,6 +10,7 @@ body {
     margin: 0;
     background: url("../css/img1.jpg") no-repeat;
     block-size: 100% 100%;
+    background-size: cover;
 }
 
  .card {
