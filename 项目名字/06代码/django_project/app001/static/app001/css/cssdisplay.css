@@ -8,6 +8,8 @@ body {
 	padding:0;
 	font-weight:500;
 	font-family:"Microsoft YaHei","宋体","Segoe UI","Lucida Grande",Helvetica,Arial,sans-serif,FreeSans,Arimo;
+    background:url("../img/beijing.jpg") no-repeat;
+    background-size: cover;
 }
 
 /*搜索栏样式*/
@@ -99,7 +101,8 @@ input[type=text]:focus {
 .main {
     -ms-flex: 50%; /* IE10 */
     flex: 50%;
-    background-color: white;
+    /*background-color: white;*/
+    /*background:url("../img/beijing.jpg") no-repeat;*/
     padding: 20px;
 }
 

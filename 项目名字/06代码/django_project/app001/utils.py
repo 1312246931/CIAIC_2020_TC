@@ -56,7 +56,7 @@ def init_logger(log_file=None):
 
 class WeatherGet:
     def __init__(self,url):
-        url = 'http://www.weather.com.cn/weather15d/'+str(url)+'.shtml'
+        url = 'http://www.weather.com.cn/weather/'+str(url)+'.shtml'
         self.url = url
         pass
     def request_weather_web(self,url):
@@ -87,31 +87,41 @@ class WeatherGet:
 
         lists = soup.find('ul', class_='t clearfix').find_all('li')
         weather_eightday = []
+        weather_tem_high = []
+        weather_tem_low = []
+        weather_date = []
         for item in lists:
             try:  # 找到周几和具体几号
-                item_date = item.find('span', class_='time').text
+                item_date = item.find('h1').text
             except:
                 item_date = '无'
             try:  # 得到具体的天气
-                item_wea = item.find('span', class_='wea').text
+                item_wea = item.find('p', class_='wea').text
             except:
                 item_wea = '无'
             try:
-                item_tem = item.find('span', class_='tem').text
+                item_tem_high = item.find('p', class_='tem').find('span').text
             except:
-                item_tem = '无'
+                item_tem_high = '无'
             try:
-                item_wind = item.find('span', class_='wind').text
+                item_tem_low = item.find('p', class_='tem').find('i').text
+                item_tem_low = re.findall(r"\d+", item_tem_low)[0]
+            except:
+                item_tem_low = '无'
+            try:
+                item_wind = item.find('p', class_='win').find('em').find('span').get('title')
             except:
                 item_wind = '无'
             try:
-                item_wind1 = item.find('span', class_='wind1').text
+                item_wind1 = item.find('p', class_='win').find('i').text
             except:
                 item_wind1 = '无'
-            # logger.info('|日期：' + item_date + ' |天气' + item_wea + ' |温度' + item_tem+ ' |风向' + item_wind+ ' |风级' + item_wind1)
-            weather_oneday = [item_date, item_wea, item_tem, item_wind, item_wind1]
+            weather_oneday = [item_date, item_wea, item_tem_high, item_tem_low, item_wind, item_wind1]
             weather_eightday.append(weather_oneday)
-        return weather_eightday
+            weather_date.append(item_date)
+            weather_tem_high.append(item_tem_high)
+            weather_tem_low.append(item_tem_low)
+        return weather_eightday,weather_date,weather_tem_high,weather_tem_low
 
     def get_weather_surroundingregion(self,soup):
         weather_allcity = []

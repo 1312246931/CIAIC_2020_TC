@@ -55,10 +55,14 @@ def search(request):
 	weatherget = WeatherGet(city_code)
 	web_info = weatherget.request_weather_web(weatherget.url)  # 抓取网页数据
 	soup = BeautifulSoup(web_info, 'html.parser')  # 通过bs4解析网页数据
-	weather_info = weatherget.get_weather_info(soup)  # 从网页数据中提取所需数据，并保存
+	weather_info,weather_date,weather_tem_high,weather_tem_low = weatherget.get_weather_info(soup)  # 从网页数据中提取所需数据，并保存
 	logger.info('获取到%s的近八日天气信息'%city_name)
 	weather_surround=weatherget.get_weather_surroundingregion(soup)
 	logger.info('获取到%s周边城市今日的天气信息'%city_name)
 
-	return render(request,'app001/htmldisplay.html',{'wea_info':weather_info,'wea_surround':weather_surround,'city_name':city_name})
-
+	#微信读书
+	all_url = "https://weread.qq.com/web/category/all"
+	all_novel = get_info(all_url)
+	return render(request,'app001/htmldisplay.html',{'wea_info':weather_info,'wea_surround':weather_surround,'city_name':city_name,'all_novel':all_novel,'wea_date':weather_date,'wea_tem_high':weather_tem_high,'wea_tem_low':weather_tem_low})
+def fun_method01(request):
+	return render(request, 'app001/index.html')

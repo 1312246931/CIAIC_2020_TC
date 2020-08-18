@@ -2,12 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>展示页面</title>
+    <title>天气查询详情</title>
     {% load static %}
     <!-- javascript代码 -->
     <script type="text/javascript" src="{% static 'app001/js/jsdisplay.js' %}"></script>
+    <script type="text/javascript" src="../../static/app001/js/echarts.min.js"></script>
     <!-- css代码-->
     <link href="{% static 'app001/css/cssdisplay.css' %}" rel="stylesheet" type="text/css">
+    <style>
+        table
+        {
+            border-collapse: collapse;
+            margin: 0 auto;
+            text-align: center;
+        }
+        table td, table th
+        {
+            border: 1px solid #cad9ea;
+            color: #666;
+            height: 30px;
+        }
+        table thead th
+        {
+            background-color: #CCE8EB;
+            width: 100px;
+        }
+        table tr:nth-child(odd)
+        {
+            background: #fff;
+        }
+        table tr:nth-child(even)
+        {
+            background: #F5FAFA;
+        }
+        script{
+            width:100%;
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color:lightblue;
+            border: none;
+            color: #000000;
+            text-align: center;
+            font-size: 4px;
+            padding: 10px;
+            width: 80px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '»';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
@@ -19,44 +92,155 @@
 
 {#网页布局#}
 <div class="header">
-  <h1>全国天气查询</h1>
+    <h1>全国天气查询</h1>
 </div>
 
 <div class="navbar">
-  <a href="http://localhost:8000/app001/display/">返回首页</a>
-  <a href="http://localhost:8000/app001/wereadtotal/">微信读书</a>
-  <a href="http://localhost:8000/app003/index/">豆瓣电影</a>
-  <a href="http://localhost:8000/app002/index/">图集</a>
-  <a href="http://localhost:8000/app004/index/">网易云</a>
+    <a href="http://localhost:8000/app001/display/">返回首页</a>
+    <a href="http://localhost:8000/app001/wereadtotal/">微信读书</a>
+    <a href="http://localhost:8000/app003/index/">豆瓣电影</a>
+    <a href="http://localhost:8000/app002/index/">图集</a>
+    <a href="http://localhost:8000/app004/index/">网易云</a>
 </div>
 
 <div class="row">
+    {#    左边的侧栏#}
+    <div class="side">
+        <h2>豆瓣电影TOP250</h2>
+        <ul>
+            <a href="https://movie.douban.com/top250"><img width="150" alt="豆瓣电影TOP250" src="../../static/app001/img/douban1.jpg" class></a>
+        </ul>
+        <ul>
+            <a href="https://movie.douban.com/top250"><img width="150" alt="豆瓣电影TOP250" src="../../static/app001/img/douban2.jpg" class></a>
+        </ul>
+        <ul>
+            <a href="https://movie.douban.com/top250"><img width="150" alt="豆瓣电影TOP250" src="../../static/app001/img/douban2.jpg" class></a>
+        </ul>
+        <ul>
+            <a href="https://movie.douban.com/top250"><img width="150" alt="豆瓣电影TOP250" src="../../static/app001/img/douban4.jpg" class></a>
+        </ul>
+        <ul>
+            <a href="https://movie.douban.com/top250"><img width="150" alt="豆瓣电影TOP250" src="../../static/app001/img/douban5.jpg" class></a>
+        </ul>
+        <ul>
+            <a href="https://movie.douban.com/top250"><img width="150" alt="豆瓣电影TOP250" src="../../static/app001/img/douban6.jpg" class></a>
+        </ul>
+        <h3><a href="https://movie.douban.com/top250">更多内容</a></h3>
+
     </div>
     {#    中间的内容#}
     <div class="main">
         <h2>{{city_name }}</h2>
         <ul>
-            {% for oneday in wea_info %}
-                <li>{{ oneday.0}}</li>
-                <li>{{ oneday.1}}</li>
-                <li>{{ oneday.2}}</li>
-                <li>{{ oneday.3}}</li>
-                <li>{{ oneday.4}}</li>
-            {% endfor %}
+            <table width="90%" class="table">
+                <tr>
+                    <th>日期</th>
+                    <th>天气</th>
+                    <th>最高/最低气温</th>
+                    <th>风向</th>
+                    <th>风级</th>
+                </tr>
+                {% for oneday in wea_info %}
+                    <tr>
+                        <td>{{ oneday.0 }}</td>
+                        <td>{{ oneday.1 }}</td>
+                        <td>{{ oneday.2 }}/{{ oneday.3 }}度</td>
+                        <td>{{ oneday.4 }}</td>
+                        <td>{{ oneday.5 }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+
         </ul>
+        {#    </div>#}
+        {#</div>#}
+        <div id="main" style="width: 1000px;height:500px;position:absolute;left: 350px;top: 700px"></div>
+        <script type="text/javascript">
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('main'));
+
+            // 指定图表的配置项和数据
+            var option = {
+                backgroundColor: 'lightblue',
+                title: {
+                    text: '未来七天气温变化情况',
+                    textAlign:'left',
+                },
+                tooltip: {
+                    trigger: 'axis'
+                },
+                legend: {
+                    data: ['最高气温', '最低气温'],
+
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    width:'800px',
+                    containLabel: true
+                },
+                toolbox: {
+                    feature: {
+                        saveAsImage: {}
+                    }
+                },
+                xAxis: {
+                    type: 'category',
+                    boundaryGap: false,
+                    data: {{ wea_date|safe }}
+                },
+                yAxis: {
+                    type: 'value'
+                },
+                series: [
+                    {
+                        name: '最高气温',
+                        type: 'line',
+                        radius: '70%',
+                        data: {{wea_tem_high|safe}}
+                    },
+
+                    {
+                        name: '最低气温',
+                        type: 'line',
+                        data: {{wea_tem_low|safe}}
+                    },
+
+                ]
+            };
+
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        </script>
+        {#    ####}
+
+
+        <div style="width: 600px;height:400px;position: absolute;left: 450px;top: 1200px">
+
+            <h2>周边城市</h2>
+            <ul>
+                <table width="90%" class="table">
+                    <tr>
+                        <th>城市</th>
+                        <th>最高/最低气温</th>
+                        <th>详情</th>
+                    </tr>
+                    {% for oneday in wea_surround %}
+                        <tr>
+                            <td>{{ oneday.0 }}</td>
+                            <td>{{ oneday.1 }}</td>
+{#                           <td onclick="window.open('{{ oneday.3}}');">#}
+                            <td><button class="button" style="vertical-align:middle" onclick="window.open('{{ oneday.2}}');"><span>详情 </span></button>
+                            </td>
+
+                        </tr>
+                    {% endfor %}
+                </table>
+            </ul>
+        </div>
     </div>
-</div>
 
-<div class="footer">
-    <h2>周边城市</h2>
-    <ul>
-        {% for oneday in wea_surround %}
-            <li>{{ oneday.0}}</li>
-            <li>{{ oneday.1}}</li>
-            <li>{{ oneday.2}}</li>
-        {% endfor %}
-    </ul>
 </div>
-
 </body>
 </html>

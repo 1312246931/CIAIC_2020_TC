@@ -5,13 +5,13 @@
 }
 
 /* body 样式 */
-@media only screen and (min-width: 1800px) {body {
+body {
     /*font-family: Arial;*/
     margin: 0;
     background: url("../css/img1.jpg") no-repeat;
-    /*background-size: 100% 100%;*/
-    /*block-size: 100% 100%;*/
-}}
+    background-size: cover;
+    block-size: 100% 100%;
+}
 
 .card {
     position: absolute;

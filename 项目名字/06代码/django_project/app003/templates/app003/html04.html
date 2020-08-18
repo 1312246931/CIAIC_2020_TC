@@ -12,7 +12,7 @@
     <style>
         .header
         {
-            background: url("../../static/app001/image/title.jpg");
+            background: url("../../static/app003/image/title.jpg");
             padding: 150px;
             text-align: center;
             color:white;
@@ -82,7 +82,7 @@
             right: 0;
         }
         .box4 .header {
-            background: url("../../static/app001/image/title.jpg") no-repeat;
+            background: url("../../static/app003/image/title.jpg") no-repeat;
             padding: 150px;
             text-align: center;
             color:white;
@@ -153,10 +153,9 @@
     <div class="navbar">
         <a href="http://localhost:8000/app001/display/">首页</a>
         <a href="https://weread.qq.com/web/category/all">微信读书</a>
-        <a href="https://movie.douban.com/top250">豆瓣电影</a>
-        <a href="http://soso.nipic.com/?q=%E5%BC%BA%E7%9A%87">精美图集</a>
-        <a href="#">搞笑图集</a>
-        <a href="https://music.163.com/discover/artist">网易云</a>
+        <a href="http://localhost:8000/app003/index/">豆瓣电影</a>
+        <a href="http://localhost:8000/app002/index/">图集</a>
+        <a href="http://localhost:8000/app004/index/">网易云</a>
     </div>
     <div class="container">
         <div class="left">
@@ -202,25 +201,6 @@
                     {% endfor %}
                 </ol>
             </ul>
-{#        card#}
-{#        {% for onepage in douban_movie_info %}#}
-{#                        {% for onelist in onepage %}#}
-{#            <div class="card mb-3" style="max-width: 600px;position: absolute;left:400px;top:320px">#}
-{#                <div class="row no-gutters">#}
-{#                    <div class="col-md-4">#}
-{#                        < img src= class="card-img" >#}
-{#                    </div>#}
-{#                    <div class="col-md-8">#}
-{#                        <div class="card-body">#}
-{#                            <h4 class="card-title">{{aa_noval.0.2}}</h4>#}
-{#                            <p class="card-text">{{aa_noval.0.3}}</p >#}
-{#                            <p class="card-text"><small class="text-muted">评分 今日阅读人数</small></p >#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#        {% endfor %}#}
-{#        {% endfor %}#}
         </div>
         <div class="right">
 
